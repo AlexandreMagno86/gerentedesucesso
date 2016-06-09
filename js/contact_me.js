@@ -8,9 +8,9 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("Alexandre Magno Papachristodoulou").val();
-            var email = $("contato@gerentedesucesso.com").val();
-            var phone = $("(11) 975768688").val();
+            var name = $("input#name").val();
+            var email = $("input#email").val();
+            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
